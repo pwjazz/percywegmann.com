@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(percywegmann.com|pwjazz.webfactional.com)$ [NC]
+RewriteRule ^(.*)$ http://www.percywegmann.com/$1 [R=301,L]
+
