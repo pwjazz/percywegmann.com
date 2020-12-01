@@ -1,0 +1,154 @@
+body {
+  font-size: 14px;
+  text-align: center;
+  background-color: #CCCCCC;
+}
+
+/* User retro techy typeface */
+body, .ui-widget {
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+/* Make headings stand out with a different font */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  font-family: "Arial", "Verdana" sans-serif;
+}
+
+/* New-school link style */
+a {
+  text-decoration: none;
+}
+
+/* Currently selected link looks plain */
+a.current {
+  text-decoration: none;
+  color: black;
+}
+
+/* Contains the main content, centered on page */
+#content {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+/* Contains the 5 ranges of values for map */
+#legend {
+  margin-bottom: 20px;
+}
+
+/* Each of the 5 ranges of values in legend */
+.range {
+  width: 170px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* The unit of measure should stand out less than the rest of the legend */
+.range .info {
+  font-weight: normal;
+}
+
+/* Color code value ranges */
+#range0 { background-color:#FEF0D9; }
+#range1 { background-color:#FDCC8A; }
+#range2 { background-color:#FC8D59; }
+#range3 { background-color:#E34A33; }
+#range4 { background-color:#B30000; color: #FFFFFF; }
+
+/* The caption at the top of the map reminding people to hover over counties for more details */
+#hoverHelp {
+  text-align: center; margin-bottom: 10px; width: 555px;
+}
+
+/* The SVG map */
+#map {
+  float: left;
+}
+
+/* Color code the counties on the map */
+.county0 { fill:#FEF0D9; }
+.county1 { fill:#FDCC8A; }
+.county2 { fill:#FC8D59; }
+.county3 { fill:#E34A33; }
+.county4 { fill:#B30000; }
+.county5 { fill:#000000; }
+
+/* The controls on the right-hand side */
+#controls {
+  float: left;
+  margin-left: 30px;
+  width: 330px;
+}
+
+#controls label {
+  font-size: 16px;
+}
+
+/* Contains the links for selecting one of the metrics */
+#viewSelectors {
+  margin-bottom: 10px;
+}
+
+/* Indent controls relative to their headings */
+#viewSelectors, #chemicalForm, #zoomControls {
+  margin-left: 20px;
+}
+
+/* The text input for entering a chemical, part of a combo-box like control */
+#controls #chemical {
+  display: block;
+  float: left;
+  width: 250px;
+}
+
+/* The arrow for the chemical combo box */
+#controls #dropDownArrow {
+  float: left;
+  margin-top: 2px;
+  height: 19px;
+}
+
+/* Given enough time, I should take a look at how to do this without putting in browser-conditional stuff */
+@-moz-document url-prefix() {
+  #controls #dropDownArrow {
+    margin-top: 0px;
+    height: 20px;
+  }
+}
+
+/* Drop-down options should be left-aligned */
+.ui-menu-item {
+  text-align: left;
+}
+
+/* Error message in case there was a problem with the chemical input */
+#error {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#zoomControls {
+  margin-bottom: 20px;
+}
+
+#footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
